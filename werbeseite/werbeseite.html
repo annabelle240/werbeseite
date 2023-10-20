@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<!--
+- Praktikum DBWT. Autoren:
+- Anna, Malanchuk, 3597552
+-->
+
+
+
+
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Werbeseite</title>
+
+    <link rel="stylesheet" type="text/css" href="werbeseite.css">
+
+</head>
+<body>
+
+
+<header>
+
+
+    <nav>
+            <a href="#home_logo" class="logo"><img src="logo.png" alt="logo" /></a>
+            <a href="#ankuendigungen">Ankündigungen</a>
+            <a href="#speisen">Speisen</a>
+            <a href="#zahlen">Zahlen</a>
+            <a href="#kontakt">Kontakt</a>
+            <a href="#wichtig">Wichtig für uns</a>
+    </nav>
+
+</header>
+
+
+
+<main>
+
+    <!-- Bald gibt es Essen auch online  -->
+    <div class="container1" id="ankuendigungen">
+        <div class="text">
+            <h1>Bald gibt es Essen auch online!</h1>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+        <div class="food_cont1">
+            <img src="food_cont1.jpg" alt="food">
+        </div>
+    </div>
+
+
+
+
+
+
+    <!--  Köstlichkeiten, die Sie erwarten -->
+    <div class="container2" id="speisen">
+        <div class="triangle"></div>
+
+        <h1>Köstlichkeiten, die Sie erwarten</h1>
+
+                <div class="tabelle">
+                    <ul class="responsive-table">
+                        <li class="table-header">
+                            <div class="col col-1">Speise</div>
+                            <div class="col col-2">Preis intern</div>
+                            <div class="col col-3">Preis extern</div>
+                        </li>
+                        <li class="table-row">
+                            <div class="col col-1" data-label="Customer Name">Spaghetti Carbonara</div>
+                            <div class="col col-2" data-label="Amount">3.5</div>
+                            <div class="col col-3" data-label="Payment Status">4.5</div>
+                        </li>
+                        <li class="table-row">
+                            <div class="col col-1" data-label="Customer Name">Schnitzel</div>
+                            <div class="col col-2" data-label="Amount">3.5</div>
+                            <div class="col col-3" data-label="Payment Status">4.5</div>
+                        </li>
+                        <li class="table-row">
+                            <div class="col col-1" data-label="Customer Name">Suppe</div>
+                            <div class="col col-2" data-label="Amount">2.8</div>
+                            <div class="col col-3" data-label="Payment Status">3.8</div>
+                        </li>
+                        <li class="table-row">
+                            <div class="col col-1" data-label="Customer Name">Dessert</div>
+                            <div class="col col-2" data-label="Amount">1.0</div>
+                            <div class="col col-3" data-label="Payment Status">2.0</div>
+                        </li>
+                    </ul>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- E-Mensa in Zahlen  -->
+    <div class="container3" id="zahlen">
+        <div class="content">
+            <div class="triangle"></div>
+            <h1>E-Mensa in Zahlen</h1>
+            <div class="zahlen">
+                <p>
+                    x-variable
+                </p>
+
+                <p>
+                    y-variable
+                </p>
+
+                <p>
+                    z-variable
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <!-- Formular  -->
+    <div class="container4" id="kontakt">
+
+        <span class="triangle"></span>
+
+        <h1> Interesse geweckt? Wir informieren Dich!</h1>
+
+        <form class="form" action="formdata.html" method="post">
+            <label for="name">Name: </label>
+            <input type="text" id="name" placeholder="Dein Name" name="name">
+
+            <label for="email">Email: </label>
+            <input type="text" id="email" placeholder="Deine E-Mail Adresse" name="email">
+
+            <label for="message">Message: </label>
+            <input type="text" id="message" placeholder="Deine Nachricht" name="message">
+
+            <label for="language">Sprache: </label>
+            <select id="language" name="language">
+                <option value="englisch">Englisch</option>
+                <option value="deutsch">Deutsch</option>
+            </select>
+
+            <input type="checkbox" id="datenschutz" name="datenschutz" value="Bike">
+            <label for="datenschutz">Datenschutzhinweise gelesen</label>
+
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+
+
+    <!-- Wichtig  -->
+    <div class="container5" id="wichtig">
+        <div class="content">
+            <span class="triangle"></span>
+            <h1>Bald gibt es Essen auch online!</h1>
+            <ul>
+                <li> Bester frische saisonale Zutaten</li>
+                <li>Ausgewogene abwechslungsreiche Gerichte</li>
+                <li>Sauberkeit</li>
+            </ul>
+
+
+        </div>
+
+    </div>
+
+
+</main>
+
+
+
+<footer>
+
+
+    <ul>
+        <li>(c) DBWT</li>
+        <li>Hilfe</li>
+        <li>Datenschutz</li>
+        <li>Impressum</li>
+    </ul>
+
+
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    document.querySelector('.form').addEventListener("submit", function(event) {
+        var checkbox = document.getElementById("datenschutz");
+        if (!checkbox.checked) {
+            alert("Bitte bestätigen Sie, dass Sie die Datenschutzhinweise gelesen haben.");
+            event.preventDefault(); // This will prevent the form from submitting
+        }
+    });
+</script>
+
+
+</body>
+
+
+</html>
