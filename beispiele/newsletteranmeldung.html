@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<!--
+- Praktikum DBWT. Autoren:
+- Anna, Malanchuk, 3597552
+-->
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="formdata.html" method="post">
+    <fieldset>
+
+        <legend>Anmeldung</legend>
+
+        <br>
+
+        <p>Anrede</p>
+        <input type="radio" id="frau" name="anrede" value="frau">
+        <label>Frau</label>
+        <input type="radio" id="herr" name="anrede" value="herr">
+        <label>Herr</label>
+
+        <br><br><br>
+
+        <label for="vorname">Vorname*</label>
+        <br>
+        <input type="text" id="vorname" name=“benutzer" placeholder="Vorname">
+
+        <br><br>
+
+        <label for="nachname">Nachname*</label>
+        <br>
+        <input type="text" id="nachname" name=“benutzer" placeholder="Nachname">
+
+        <br><br>
+
+        <label for="absender">E-Mail Adresse*</label>
+        <br>
+        <input name="absender" id="absender" placeholder="E-Mail">
+
+        <br><br><br>
+
+        <p>Benachrichtigungsintervall</p>
+        <select name="top3" size="1">
+            <option>Tag</option>
+            <option>Woche</option>
+            <option>Monat</option>
+        </select>
+
+        <br><br><br>
+
+
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> Datenschutzhinweise gelesen </label><br>
+
+        <br><br><br>
+
+        <input type="submit" value="Submit">
+
+        <p>*Eingaben sind Pflicht</p>
+
+
+    </fieldset>
+
+
+</form>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

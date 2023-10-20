@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<!--
+- Praktikum DBWT. Autoren:
+- Anna, Malanchuk, 3597552
+-->
+
+
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .untereinander {
+            display: grid;
+            grid-template-rows: repeat(3, 1fr);
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .nebeneinander {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            justify-items: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .zentriert {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <h1>1) … drei Elemente untereinander</h1>
+    <div class="untereinander">
+        <div>Element 1</div>
+        <div>Element 2</div>
+        <div>Element 3</div>
+    </div>
+
+    <h1>2) … drei Elemente nebeneinander, (wobei Sie das mittlere Element zentrieren)</h1>
+    <div class="nebeneinander">
+        <div>Element 1</div>
+        <div>Element 2 (zentriert)</div>
+        <div>Element 3</div>
+    </div>
+
+    <h1>3) … ein Element zentriert</h1>
+    <div class="zentriert">
+        <div>Ein zentriertes Element</div>
+    </div>
+
+</body>
+</html>
